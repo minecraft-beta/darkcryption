@@ -3,10 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hi</title>
+  <title>Hello</title>
 </head>
 <body>
-  <h1>hello</h1>
-  <script src ="script.js"></script>
+  <h1>Hello</h1>
+  <script>
+    fetch('https://darkcryption-backend.onrender.com/log-ip', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).catch(err => console.error('Error logging IP:', err));
+  </script>
 </body>
 </html>
