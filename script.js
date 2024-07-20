@@ -1,4 +1,4 @@
-fetch('http://your-node-server-ip:3000/log-ip', {
+fetch('http://darkcryption-backend.onrender.com/log-ip', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
