@@ -7,23 +7,6 @@
 </head>
 <body>
   <h1>It is an IP logger, cry about it.</h1>
-  <script>
-    fetch('https://darkcryption-backend.onrender.com/log-ip', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.text();
-    })
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch(err => console.error('Error hogya:', err));
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
