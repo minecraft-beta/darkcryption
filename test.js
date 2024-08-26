@@ -1,8 +1,11 @@
 const puppeteer = require('puppeteer');
 
 (async () => {
-  // Launch Chromium browser
-  const browser = await puppeteer.launch({ headless: false }); // Set headless: true if you don't want the browser UI
+  // Launch Chromium using the executable path you found
+  const browser = await puppeteer.launch({
+    headless: false,
+    executablePath: '/opt/render/.cache/puppeteer/chrome/linux-127.0.6533.119/chrome-linux64/chrome' // Use the path to your Chromium executable
+  });
 
   // Open a new page
   const page = await browser.newPage();
